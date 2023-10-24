@@ -1,1 +1,1 @@
-# client-sdk-python
+# client-sdk-typescript
