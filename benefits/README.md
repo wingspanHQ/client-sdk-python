@@ -15,17 +15,15 @@ It has been generated successfully based on your OpenAPI spec. However, it is no
 - [ ] 🎁 Publish your SDK to package managers by [configuring automatic publishing](https://www.speakeasyapi.dev/docs/productionize-sdks/publish-sdks)
 - [ ] ✨ When ready to productionize, delete this section from the README
 <!-- Start SDK Installation -->
-# SDK Installation
+## SDK Installation
 
 ```bash
-pip install openapi
+pip install wingspan_benefits
 ```
 <!-- End SDK Installation -->
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```python
 import sdk
 from sdk.models import operations
@@ -42,9 +40,9 @@ if res.enrollment is not None:
 <!-- End SDK Example Usage -->
 
 <!-- Start SDK Available Operations -->
-# Available Resources and Operations
+## Available Resources and Operations
 
-## [SDK](docs/sdks/sdk/README.md)
+### [SDK](docs/sdks/sdk/README.md)
 
 * [get_benefits_enrollment_id_](docs/sdks/sdk/README.md#get_benefits_enrollment_id_) - Retrieve Enrollment Details for a Specific Member
 * [get_benefits_plan_enrollment](docs/sdks/sdk/README.md#get_benefits_plan_enrollment) - List all plan enrollments
@@ -54,8 +52,6 @@ if res.enrollment is not None:
 <!-- End SDK Available Operations -->
 
 <!-- Start Dev Containers -->
-
-
 
 <!-- End Dev Containers -->
 
