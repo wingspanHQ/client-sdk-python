@@ -3,7 +3,7 @@
 from __future__ import annotations
 import dataclasses
 import requests as requests_http
-from ..shared import enrollment as shared_enrollment
+from ...models.shared import enrollment as shared_enrollment
 from typing import Optional
 
 

@@ -1,6 +1,4 @@
 <!-- Start SDK Example Usage -->
-
-
 ```python
 import sdk
 from sdk.models import operations
@@ -8,7 +6,7 @@ from sdk.models import operations
 s = sdk.SDK()
 
 
-res = s.sdk.get_benefits_enrollment_id_(id='string')
+res = s.get_benefits_enrollment_id_(id='string')
 
 if res.enrollment is not None:
     # handle response
