@@ -18,14 +18,13 @@ SERVERS = [
 @dataclass
 class SDKConfiguration:
     client: requests.Session
-    security_client: requests.Session
     server_url: str = ''
     server_idx: int = 0
     language: str = 'python'
     openapi_doc_version: str = '1.0.0'
-    sdk_version: str = '1.0.0'
-    gen_version: str = '2.173.0'
-    user_agent: str = 'speakeasy-sdk/python 1.0.0 2.173.0 1.0.0 wingspan_users'
+    sdk_version: str = '2.0.0'
+    gen_version: str = '2.188.1'
+    user_agent: str = 'speakeasy-sdk/python 2.0.0 2.188.1 1.0.0 wingspan_users'
     retry_config: RetryConfig = None
 
     def get_server_details(self) -> Tuple[str, Dict[str, str]]:
