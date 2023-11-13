@@ -3,7 +3,7 @@
 from __future__ import annotations
 import dataclasses
 import requests as requests_http
-from ..shared import serviceenablementresponse as shared_serviceenablementresponse
+from ...models.shared import serviceenablementresponse as shared_serviceenablementresponse
 from typing import Optional
 
 

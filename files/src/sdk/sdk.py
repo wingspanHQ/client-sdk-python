@@ -34,15 +34,14 @@ class SDK:
         if client is None:
             client = requests_http.Session()
         
-        security_client = client
-        
         if server_url is not None:
             if url_params is not None:
                 server_url = utils.template_url(server_url, url_params)
 
-        self.sdk_configuration = SDKConfiguration(client, security_client, server_url, server_idx, retry_config=retry_config)
+        self.sdk_configuration = SDKConfiguration(client, None, server_url, server_idx, retry_config=retry_config)
        
         
+    
     
     
     
@@ -74,9 +73,12 @@ class SDK:
                 res.enrollment = out
             else:
                 raise errors.SDKError(f'unknown content-type received: {content_type}', http_res.status_code, http_res.text, http_res)
+        elif http_res.status_code >= 400 and http_res.status_code < 500 or http_res.status_code >= 500 and http_res.status_code < 600:
+            raise errors.SDKError('API error occurred', http_res.status_code, http_res.text, http_res)
 
         return res
 
+    
     
     def get_benefits_plan_enrollment(self) -> operations.GetBenefitsPlanEnrollmentResponse:
         r"""List all plan enrollments"""
@@ -97,12 +99,15 @@ class SDK:
         if http_res.status_code == 200:
             if utils.match_content_type(content_type, 'application/json'):
                 out = utils.unmarshal_json(http_res.text, Optional[List[shared.PlanEnrollment]])
-                res.plan_enrollments = out
+                res.classes = out
             else:
                 raise errors.SDKError(f'unknown content-type received: {content_type}', http_res.status_code, http_res.text, http_res)
+        elif http_res.status_code >= 400 and http_res.status_code < 500 or http_res.status_code >= 500 and http_res.status_code < 600:
+            raise errors.SDKError('API error occurred', http_res.status_code, http_res.text, http_res)
 
         return res
 
+    
     
     def get_benefits_plan_enrollment_id_(self, id: str) -> operations.GetBenefitsPlanEnrollmentIDResponse:
         r"""Get a particular plan enrollment by ID"""
@@ -130,9 +135,12 @@ class SDK:
                 res.plan_enrollment = out
             else:
                 raise errors.SDKError(f'unknown content-type received: {content_type}', http_res.status_code, http_res.text, http_res)
+        elif http_res.status_code >= 400 and http_res.status_code < 500 or http_res.status_code >= 500 and http_res.status_code < 600:
+            raise errors.SDKError('API error occurred', http_res.status_code, http_res.text, http_res)
 
         return res
 
+    
     
     def get_benefits_service(self) -> operations.GetBenefitsServiceResponse:
         r"""Retrieve Current Benefits Service Status
@@ -158,9 +166,12 @@ class SDK:
                 res.service_enablement_response = out
             else:
                 raise errors.SDKError(f'unknown content-type received: {content_type}', http_res.status_code, http_res.text, http_res)
+        elif http_res.status_code >= 400 and http_res.status_code < 500 or http_res.status_code >= 500 and http_res.status_code < 600:
+            raise errors.SDKError('API error occurred', http_res.status_code, http_res.text, http_res)
 
         return res
 
+    
     
     def patch_benefits_service_id_(self, id: str, service_enablement_update: Optional[shared.ServiceEnablementUpdate] = None) -> operations.PatchBenefitsServiceIDResponse:
         r"""Modify Benefits Service Status
@@ -194,6 +205,8 @@ class SDK:
                 res.service_enablement_response = out
             else:
                 raise errors.SDKError(f'unknown content-type received: {content_type}', http_res.status_code, http_res.text, http_res)
+        elif http_res.status_code >= 400 and http_res.status_code < 500 or http_res.status_code >= 500 and http_res.status_code < 600:
+            raise errors.SDKError('API error occurred', http_res.status_code, http_res.text, http_res)
 
         return res
 
