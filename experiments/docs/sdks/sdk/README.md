@@ -26,7 +26,7 @@ from sdk.models import operations
 s = sdk.SDK()
 
 
-res = s.sdk.get_benefits_enrollment_id_(id='string')
+res = s.get_benefits_enrollment_id_(id='string')
 
 if res.enrollment is not None:
     # handle response
@@ -43,7 +43,11 @@ if res.enrollment is not None:
 ### Response
 
 **[operations.GetBenefitsEnrollmentIDResponse](../../models/operations/getbenefitsenrollmentidresponse.md)**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## get_benefits_plan_enrollment
 
@@ -54,13 +58,12 @@ List all plan enrollments
 ```python
 import sdk
 
-
 s = sdk.SDK()
 
 
-res = s.sdk.get_benefits_plan_enrollment()
+res = s.get_benefits_plan_enrollment()
 
-if res.plan_enrollments is not None:
+if res.classes is not None:
     # handle response
     pass
 ```
@@ -69,7 +72,11 @@ if res.plan_enrollments is not None:
 ### Response
 
 **[operations.GetBenefitsPlanEnrollmentResponse](../../models/operations/getbenefitsplanenrollmentresponse.md)**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## get_benefits_plan_enrollment_id_
 
@@ -84,7 +91,7 @@ from sdk.models import operations
 s = sdk.SDK()
 
 
-res = s.sdk.get_benefits_plan_enrollment_id_(id='string')
+res = s.get_benefits_plan_enrollment_id_(id='string')
 
 if res.plan_enrollment is not None:
     # handle response
@@ -101,7 +108,11 @@ if res.plan_enrollment is not None:
 ### Response
 
 **[operations.GetBenefitsPlanEnrollmentIDResponse](../../models/operations/getbenefitsplanenrollmentidresponse.md)**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## get_benefits_service
 
@@ -112,11 +123,10 @@ Fetches the current status indicating whether the benefits service is enabled or
 ```python
 import sdk
 
-
 s = sdk.SDK()
 
 
-res = s.sdk.get_benefits_service()
+res = s.get_benefits_service()
 
 if res.service_enablement_response is not None:
     # handle response
@@ -127,7 +137,11 @@ if res.service_enablement_response is not None:
 ### Response
 
 **[operations.GetBenefitsServiceResponse](../../models/operations/getbenefitsserviceresponse.md)**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## patch_benefits_service_id_
 
@@ -142,7 +156,7 @@ from sdk.models import operations, shared
 s = sdk.SDK()
 
 
-res = s.sdk.patch_benefits_service_id_(id='string', service_enablement_update=shared.ServiceEnablementUpdate(
+res = s.patch_benefits_service_id_(id='string', service_enablement_update=shared.ServiceEnablementUpdate(
     enabled=False,
 ))
 
@@ -162,4 +176,8 @@ if res.service_enablement_response is not None:
 ### Response
 
 **[operations.PatchBenefitsServiceIDResponse](../../models/operations/patchbenefitsserviceidresponse.md)**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
