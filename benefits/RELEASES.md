@@ -40,3 +40,13 @@ Based on:
 - [python v2.0.0] benefits
 ### Releases
 - [PyPI v2.0.0] https://pypi.org/project/wingspan_benefits/2.0.0 - benefits
+
+## 2023-11-20 01:28:55
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.121.1 (2.194.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v2.0.1] benefits
+### Releases
+- [PyPI v2.0.1] https://pypi.org/project/wingspan_benefits/2.0.1 - benefits

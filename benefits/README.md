@@ -30,10 +30,12 @@ pip install wingspan_benefits
 import sdk
 from sdk.models import operations
 
-s = sdk.SDK()
+s = sdk.SDK(
+    bearer_auth="",
+)
 
 
-res = s.get_benefits_enrollment_id_(id='string')
+res = s.benefits_enrollment.get_benefits_enrollment_id_(id='string')
 
 if res.enrollment is not None:
     # handle response
@@ -44,13 +46,17 @@ if res.enrollment is not None:
 <!-- Start SDK Available Operations -->
 ## Available Resources and Operations
 
-### [SDK](docs/sdks/sdk/README.md)
 
-* [get_benefits_enrollment_id_](docs/sdks/sdk/README.md#get_benefits_enrollment_id_) - Retrieve Enrollment Details for a Specific Member
-* [get_benefits_plan_enrollment](docs/sdks/sdk/README.md#get_benefits_plan_enrollment) - List all plan enrollments
-* [get_benefits_plan_enrollment_id_](docs/sdks/sdk/README.md#get_benefits_plan_enrollment_id_) - Get a particular plan enrollment by ID
-* [get_benefits_service](docs/sdks/sdk/README.md#get_benefits_service) - Retrieve Current Benefits Service Status
-* [patch_benefits_service_id_](docs/sdks/sdk/README.md#patch_benefits_service_id_) - Modify Benefits Service Status
+### [benefits_enrollment](docs/sdks/benefitsenrollment/README.md)
+
+* [get_benefits_enrollment_id_](docs/sdks/benefitsenrollment/README.md#get_benefits_enrollment_id_) - Retrieve Enrollment Details for a Specific Member
+* [get_benefits_plan_enrollment](docs/sdks/benefitsenrollment/README.md#get_benefits_plan_enrollment) - List all plan enrollments
+* [get_benefits_plan_enrollment_id_](docs/sdks/benefitsenrollment/README.md#get_benefits_plan_enrollment_id_) - Get a particular plan enrollment by ID
+
+### [benefits_service](docs/sdks/benefitsservice/README.md)
+
+* [get_benefits_service](docs/sdks/benefitsservice/README.md#get_benefits_service) - Retrieve Current Benefits Service Status
+* [patch_benefits_service_id_](docs/sdks/benefitsservice/README.md#patch_benefits_service_id_) - Modify Benefits Service Status
 <!-- End SDK Available Operations -->
 
 <!-- Start Dev Containers -->
@@ -74,12 +80,14 @@ Handling errors in this SDK should largely match your expectations.  All operati
 import sdk
 from sdk.models import operations
 
-s = sdk.SDK()
+s = sdk.SDK(
+    bearer_auth="",
+)
 
 
 res = None
 try:
-    res = s.get_benefits_enrollment_id_(id='string')
+    res = s.benefits_enrollment.get_benefits_enrollment_id_(id='string')
 
 except (errors.SDKError) as e:
     print(e) # handle exception
@@ -113,10 +121,11 @@ from sdk.models import operations
 
 s = sdk.SDK(
     server_idx=1,
+    bearer_auth="",
 )
 
 
-res = s.get_benefits_enrollment_id_(id='string')
+res = s.benefits_enrollment.get_benefits_enrollment_id_(id='string')
 
 if res.enrollment is not None:
     # handle response
@@ -133,10 +142,11 @@ from sdk.models import operations
 
 s = sdk.SDK(
     server_url="https://api.wingspan.app/benefits",
+    bearer_auth="",
 )
 
 
-res = s.get_benefits_enrollment_id_(id='string')
+res = s.benefits_enrollment.get_benefits_enrollment_id_(id='string')
 
 if res.enrollment is not None:
     # handle response
@@ -161,6 +171,38 @@ http_client.headers.update({'x-custom-header': 'someValue'})
 s = sdk.SDK(client: http_client)
 ```
 <!-- End Custom HTTP Client -->
+
+
+
+<!-- Start Authentication -->
+
+## Authentication
+
+### Per-Client Security Schemes
+
+This SDK supports the following security scheme globally:
+
+| Name          | Type          | Scheme        |
+| ------------- | ------------- | ------------- |
+| `bearer_auth` | http          | HTTP Bearer   |
+
+To authenticate with the API the `bearer_auth` parameter must be set when initializing the SDK client instance. For example:
+```python
+import sdk
+from sdk.models import operations
+
+s = sdk.SDK(
+    bearer_auth="",
+)
+
+
+res = s.benefits_enrollment.get_benefits_enrollment_id_(id='string')
+
+if res.enrollment is not None:
+    # handle response
+    pass
+```
+<!-- End Authentication -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
 
