@@ -26,12 +26,14 @@ Handling errors in this SDK should largely match your expectations.  All operati
 import sdk
 from sdk.models import operations
 
-s = sdk.SDK()
+s = sdk.SDK(
+    bearer_auth="",
+)
 
 
 res = None
 try:
-    res = s.get_benefits_enrollment_id_(id='string')
+    res = s.benefits_enrollment.get_benefits_enrollment_id_(id='string')
 
 except (errors.SDKError) as e:
     print(e) # handle exception
@@ -65,10 +67,11 @@ from sdk.models import operations
 
 s = sdk.SDK(
     server_idx=1,
+    bearer_auth="",
 )
 
 
-res = s.get_benefits_enrollment_id_(id='string')
+res = s.benefits_enrollment.get_benefits_enrollment_id_(id='string')
 
 if res.enrollment is not None:
     # handle response
@@ -85,10 +88,11 @@ from sdk.models import operations
 
 s = sdk.SDK(
     server_url="https://api.wingspan.app/benefits",
+    bearer_auth="",
 )
 
 
-res = s.get_benefits_enrollment_id_(id='string')
+res = s.benefits_enrollment.get_benefits_enrollment_id_(id='string')
 
 if res.enrollment is not None:
     # handle response
@@ -113,6 +117,38 @@ http_client.headers.update({'x-custom-header': 'someValue'})
 s = sdk.SDK(client: http_client)
 ```
 <!-- End Custom HTTP Client -->
+
+
+
+<!-- Start Authentication -->
+
+## Authentication
+
+### Per-Client Security Schemes
+
+This SDK supports the following security scheme globally:
+
+| Name          | Type          | Scheme        |
+| ------------- | ------------- | ------------- |
+| `bearer_auth` | http          | HTTP Bearer   |
+
+To authenticate with the API the `bearer_auth` parameter must be set when initializing the SDK client instance. For example:
+```python
+import sdk
+from sdk.models import operations
+
+s = sdk.SDK(
+    bearer_auth="",
+)
+
+
+res = s.benefits_enrollment.get_benefits_enrollment_id_(id='string')
+
+if res.enrollment is not None:
+    # handle response
+    pass
+```
+<!-- End Authentication -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
 
