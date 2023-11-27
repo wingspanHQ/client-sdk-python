@@ -121,7 +121,6 @@ s = sdk.SDK(client: http_client)
 
 
 <!-- Start Authentication -->
-
 ## Authentication
 
 ### Per-Client Security Schemes
