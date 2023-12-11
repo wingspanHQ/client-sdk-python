@@ -50,3 +50,13 @@ Based on:
 - [python v2.0.2] files
 ### Releases
 - [PyPI v2.0.2] https://pypi.org/project/wingspan_files/2.0.2 - files
+
+## 2023-12-11 01:25:35
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.125.2 (2.210.6) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v2.0.3] files
+### Releases
+- [PyPI v2.0.3] https://pypi.org/project/wingspan_files/2.0.3 - files
