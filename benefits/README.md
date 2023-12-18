@@ -32,7 +32,7 @@ import sdk
 from sdk.models import operations
 
 s = sdk.SDK(
-    bearer_auth="",
+    bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 )
 
 
@@ -77,7 +77,7 @@ import sdk
 from sdk.models import operations
 
 s = sdk.SDK(
-    bearer_auth="",
+    bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 )
 
 
@@ -116,7 +116,7 @@ from sdk.models import operations
 
 s = sdk.SDK(
     server_idx=1,
-    bearer_auth="",
+    bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 )
 
 
@@ -137,7 +137,7 @@ from sdk.models import operations
 
 s = sdk.SDK(
     server_url="https://api.wingspan.app",
-    bearer_auth="",
+    bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 )
 
 
@@ -186,7 +186,7 @@ import sdk
 from sdk.models import operations
 
 s = sdk.SDK(
-    bearer_auth="",
+    bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 )
 
 
