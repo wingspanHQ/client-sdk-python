@@ -60,3 +60,13 @@ Based on:
 - [python v2.1.0] bookkeeping
 ### Releases
 - [PyPI v2.1.0] https://pypi.org/project/wingspan_bookkeeping/2.1.0 - bookkeeping
+
+## 2024-01-08 01:31:07
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.133.1 (2.228.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v3.0.0] bookkeeping
+### Releases
+- [PyPI v3.0.0] https://pypi.org/project/wingspan_bookkeeping/3.0.0 - bookkeeping
