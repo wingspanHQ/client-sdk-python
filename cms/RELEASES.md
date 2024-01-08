@@ -59,3 +59,13 @@ Based on:
 - [python v2.1.0] cms
 ### Releases
 - [PyPI v2.1.0] https://pypi.org/project/wingspan_cms/2.1.0 - cms
+
+## 2024-01-08 01:27:42
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.133.1 (2.228.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v3.0.0] cms
+### Releases
+- [PyPI v3.0.0] https://pypi.org/project/wingspan_cms/3.0.0 - cms
