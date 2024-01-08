@@ -1,4 +1,4 @@
-# PlanEnrollmentPlanType
+# PlanType
 
 
 ## Values
