@@ -7,7 +7,7 @@ from enum import Enum
 from sdk import utils
 from typing import List, Optional
 
-class ServiceEnablementResponseServiceState(str, Enum):
+class ServiceState(str, Enum):
     DISABLED = 'Disabled'
     ENABLED = 'Enabled'
     PENDING = 'Pending'
@@ -17,7 +17,8 @@ class ServiceEnablementResponseServiceState(str, Enum):
 @dataclasses.dataclass
 class ServiceEnablementResponse:
     enabled: bool = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('enabled') }})
-    service_state: ServiceEnablementResponseServiceState = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('serviceState') }})
+    service_state: ServiceState = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('serviceState') }})
     missing_properties: Optional[List[str]] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('missingProperties') }})
+    test: Optional[str] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('test') }})
     
 
