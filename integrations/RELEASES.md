@@ -80,3 +80,13 @@ Based on:
 - [python v3.0.0] integrations
 ### Releases
 - [PyPI v3.0.0] https://pypi.org/project/wingspan_integrations/3.0.0 - integrations
+
+## 2024-01-22 01:29:28
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.148.0 (2.237.3) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v3.0.1] integrations
+### Releases
+- [PyPI v3.0.1] https://pypi.org/project/wingspan_integrations/3.0.1 - integrations
