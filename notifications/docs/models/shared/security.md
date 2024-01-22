@@ -1,8 +1,8 @@
-# ServiceEnablementUpdate
+# Security
 
 
 ## Fields
 
 | Field              | Type               | Required           | Description        |
 | ------------------ | ------------------ | ------------------ | ------------------ |
-| `enabled`          | *bool*             | :heavy_check_mark: | N/A                |
+| `bearer_auth`      | *str*              | :heavy_check_mark: | N/A                |
