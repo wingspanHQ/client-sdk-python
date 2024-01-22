@@ -80,3 +80,13 @@ Based on:
 - [python v3.0.0] payments
 ### Releases
 - [PyPI v3.0.0] https://pypi.org/project/wingspan_payments/3.0.0 - payments
+
+## 2024-01-22 01:31:21
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.148.0 (2.237.3) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v3.0.1] payments
+### Releases
+- [PyPI v3.0.1] https://pypi.org/project/wingspan_payments/3.0.1 - payments
