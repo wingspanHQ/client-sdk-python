@@ -90,3 +90,13 @@ Based on:
 - [python v3.0.1] users
 ### Releases
 - [PyPI v3.0.1] https://pypi.org/project/wingspan_users/3.0.1 - users
+
+## 2024-02-05 01:24:20
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.166.0 (2.248.6) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v4.0.0] users
+### Releases
+- [PyPI v4.0.0] https://pypi.org/project/wingspan_users/4.0.0 - users
