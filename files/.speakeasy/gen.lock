@@ -4,16 +4,16 @@ management:
   docChecksum: a394825e1c1bc4930882a784d6d637e8
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.237.3
-  releaseVersion: 3.0.1
-  configChecksum: 4f30df613701b51548fd5a8d351af462
+  generationVersion: 2.248.6
+  releaseVersion: 4.0.0
+  configChecksum: ba53a732d1f9f15726459042779ef20a
   repoURL: https://github.com/wingspanHQ/client-sdk-python.git
   repoSubDirectory: files
   installationURL: https://github.com/wingspanHQ/client-sdk-python.git#subdirectory=files
   published: true
 features:
   python:
-    core: 4.4.2
+    core: 4.4.4
     flattening: 2.81.1
     globalSecurity: 2.83.2
     globalServerURLs: 2.82.1
