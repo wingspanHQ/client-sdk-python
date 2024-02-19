@@ -49,14 +49,14 @@ Allows users to change the enablement status of a specified benefits service.
 
 ```python
 import sdk
-from sdk.models import operations, shared
+from sdk.models import shared
 
 s = sdk.SDK(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 )
 
 
-res = s.benefits_service.patch_benefits_service_id_(id='string', service_enablement_update=shared.ServiceEnablementUpdate(
+res = s.benefits_service.patch_benefits_service_id_(id='<value>', service_enablement_update=shared.ServiceEnablementUpdate(
     enabled=False,
 ))
 

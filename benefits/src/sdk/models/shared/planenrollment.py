@@ -21,6 +21,7 @@ class Status(str, Enum):
 @dataclass_json(undefined=Undefined.EXCLUDE)
 @dataclasses.dataclass
 class PlanEnrollment:
+    UNSET='__SPEAKEASY_UNSET__'
     coverage_months: List[PlanEnrollmentCoverageMonth] = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('coverageMonths') }})
     created_at: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('createdAt') }})
     currency: Any = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('currency') }})
@@ -36,6 +37,6 @@ class PlanEnrollment:
     status: Status = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('status') }})
     updated_at: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('updatedAt') }})
     user_roles: UserRoles = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('userRoles') }})
-    end_date: Optional[str] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('endDate') }})
+    end_date: Optional[str] = dataclasses.field(default=UNSET, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('endDate'), 'exclude': lambda f: f is PlanEnrollment.UNSET }})
     
 

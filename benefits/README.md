@@ -29,14 +29,13 @@ pip install wingspan_benefits
 
 ```python
 import sdk
-from sdk.models import operations
 
 s = sdk.SDK(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 )
 
 
-res = s.benefits_enrollment.get_benefits_enrollment_id_(id='string')
+res = s.benefits_enrollment.get_benefits_enrollment_id_(id='<value>')
 
 if res.enrollment is not None:
     # handle response
@@ -74,7 +73,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 
 ```python
 import sdk
-from sdk.models import operations
+from sdk.models import errors
 
 s = sdk.SDK(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
@@ -83,9 +82,9 @@ s = sdk.SDK(
 
 res = None
 try:
-    res = s.benefits_enrollment.get_benefits_enrollment_id_(id='string')
+    res = s.benefits_enrollment.get_benefits_enrollment_id_(id='<value>')
 except errors.SDKError as e:
-    print(e)  # handle exception
+    # handle exception
     raise(e)
 
 if res.enrollment is not None:
@@ -112,7 +111,6 @@ You can override the default server globally by passing a server index to the `s
 
 ```python
 import sdk
-from sdk.models import operations
 
 s = sdk.SDK(
     server_idx=1,
@@ -120,7 +118,7 @@ s = sdk.SDK(
 )
 
 
-res = s.benefits_enrollment.get_benefits_enrollment_id_(id='string')
+res = s.benefits_enrollment.get_benefits_enrollment_id_(id='<value>')
 
 if res.enrollment is not None:
     # handle response
@@ -133,7 +131,6 @@ if res.enrollment is not None:
 The default server can also be overridden globally by passing a URL to the `server_url: str` optional parameter when initializing the SDK client instance. For example:
 ```python
 import sdk
-from sdk.models import operations
 
 s = sdk.SDK(
     server_url="https://api.wingspan.app",
@@ -141,7 +138,7 @@ s = sdk.SDK(
 )
 
 
-res = s.benefits_enrollment.get_benefits_enrollment_id_(id='string')
+res = s.benefits_enrollment.get_benefits_enrollment_id_(id='<value>')
 
 if res.enrollment is not None:
     # handle response
@@ -183,14 +180,13 @@ This SDK supports the following security scheme globally:
 To authenticate with the API the `bearer_auth` parameter must be set when initializing the SDK client instance. For example:
 ```python
 import sdk
-from sdk.models import operations
 
 s = sdk.SDK(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 )
 
 
-res = s.benefits_enrollment.get_benefits_enrollment_id_(id='string')
+res = s.benefits_enrollment.get_benefits_enrollment_id_(id='<value>')
 
 if res.enrollment is not None:
     # handle response

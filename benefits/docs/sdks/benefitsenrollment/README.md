@@ -19,14 +19,13 @@ Fetches the enrollment status and details for a member identified by the provide
 
 ```python
 import sdk
-from sdk.models import operations
 
 s = sdk.SDK(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 )
 
 
-res = s.benefits_enrollment.get_benefits_enrollment_id_(id='string')
+res = s.benefits_enrollment.get_benefits_enrollment_id_(id='<value>')
 
 if res.enrollment is not None:
     # handle response
@@ -88,14 +87,13 @@ Get a particular plan enrollment by ID
 
 ```python
 import sdk
-from sdk.models import operations
 
 s = sdk.SDK(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 )
 
 
-res = s.benefits_enrollment.get_benefits_plan_enrollment_id_(id='string')
+res = s.benefits_enrollment.get_benefits_plan_enrollment_id_(id='<value>')
 
 if res.plan_enrollment is not None:
     # handle response
