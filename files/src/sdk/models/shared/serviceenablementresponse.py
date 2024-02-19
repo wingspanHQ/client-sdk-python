@@ -16,9 +16,10 @@ class ServiceState(str, Enum):
 @dataclass_json(undefined=Undefined.EXCLUDE)
 @dataclasses.dataclass
 class ServiceEnablementResponse:
+    UNSET='__SPEAKEASY_UNSET__'
     enabled: bool = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('enabled') }})
     service_state: ServiceState = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('serviceState') }})
-    missing_properties: Optional[List[str]] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('missingProperties') }})
-    test: Optional[str] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('test') }})
+    missing_properties: Optional[List[str]] = dataclasses.field(default=UNSET, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('missingProperties'), 'exclude': lambda f: f is ServiceEnablementResponse.UNSET }})
+    test: Optional[str] = dataclasses.field(default=UNSET, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('test'), 'exclude': lambda f: f is ServiceEnablementResponse.UNSET }})
     
 
