@@ -4,18 +4,18 @@ management:
   docChecksum: a394825e1c1bc4930882a784d6d637e8
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.262.2
-  releaseVersion: 4.0.2
-  configChecksum: 0141a5b2105522a01b4ccd33e5deb70f
+  generationVersion: 2.277.0
+  releaseVersion: 4.1.0
+  configChecksum: a0c6a942c109000d9d46aa962902116f
   repoURL: https://github.com/wingspanHQ/client-sdk-python.git
   repoSubDirectory: payments
   installationURL: https://github.com/wingspanHQ/client-sdk-python.git#subdirectory=payments
   published: true
 features:
   python:
-    core: 4.4.6
+    core: 4.5.0
     flattening: 2.81.1
-    globalSecurity: 2.83.2
+    globalSecurity: 2.83.4
     globalServerURLs: 2.82.1
 generatedFiles:
   - src/sdk/sdkconfiguration.py
@@ -72,3 +72,6 @@ generatedFiles:
   - docs/models/shared/security.md
   - USAGE.md
   - .gitattributes
+  - src/sdk/_hooks/sdkhooks.py
+  - src/sdk/_hooks/types.py
+  - src/sdk/_hooks/__init__.py
