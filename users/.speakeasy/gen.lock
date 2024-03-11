@@ -3,25 +3,27 @@ id: 10a1826d-b58c-44ea-9419-07800511cb84
 management:
   docChecksum: a394825e1c1bc4930882a784d6d637e8
   docVersion: 1.0.0
-  speakeasyVersion: internal
-  generationVersion: 2.277.0
-  releaseVersion: 4.1.0
-  configChecksum: 52737432de419b9b4dfec0a074836aa2
+  speakeasyVersion: 1.205.0
+  generationVersion: 2.279.1
+  releaseVersion: 4.2.0
+  configChecksum: ff91a79d55f589f3531e2d7621ce849c
   repoURL: https://github.com/wingspanHQ/client-sdk-python.git
   repoSubDirectory: users
   installationURL: https://github.com/wingspanHQ/client-sdk-python.git#subdirectory=users
   published: true
 features:
   python:
-    core: 4.5.0
+    core: 4.5.1
     flattening: 2.81.1
     globalSecurity: 2.83.4
     globalServerURLs: 2.82.1
+    responseFormat: 0.1.0
 generatedFiles:
   - src/sdk/sdkconfiguration.py
   - src/sdk/benefits_enrollment.py
   - src/sdk/benefits_service.py
   - src/sdk/sdk.py
+  - py.typed
   - pylintrc
   - setup.py
   - src/sdk/__init__.py
