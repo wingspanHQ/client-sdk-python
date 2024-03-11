@@ -29,6 +29,7 @@ res = s.benefits_service.get_benefits_service()
 if res.service_enablement_response is not None:
     # handle response
     pass
+
 ```
 
 
@@ -63,6 +64,7 @@ res = s.benefits_service.patch_benefits_service_id_(id='<value>', service_enable
 if res.service_enablement_response is not None:
     # handle response
     pass
+
 ```
 
 ### Parameters

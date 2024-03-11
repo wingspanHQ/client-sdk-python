@@ -30,6 +30,7 @@ res = s.benefits_enrollment.get_benefits_enrollment_id_(id='<value>')
 if res.enrollment is not None:
     # handle response
     pass
+
 ```
 
 ### Parameters
@@ -67,6 +68,7 @@ res = s.benefits_enrollment.get_benefits_plan_enrollment()
 if res.classes is not None:
     # handle response
     pass
+
 ```
 
 
@@ -98,6 +100,7 @@ res = s.benefits_enrollment.get_benefits_plan_enrollment_id_(id='<value>')
 if res.plan_enrollment is not None:
     # handle response
     pass
+
 ```
 
 ### Parameters
