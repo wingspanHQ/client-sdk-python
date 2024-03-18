@@ -140,3 +140,13 @@ Based on:
 - [python v4.2.0] payments
 ### Releases
 - [PyPI v4.2.0] https://pypi.org/project/wingspan_payments/4.2.0 - payments
+
+## 2024-03-18 01:25:51
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.209.3 (2.281.2) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v4.2.1] payments
+### Releases
+- [PyPI v4.2.1] https://pypi.org/project/wingspan_payments/4.2.1 - payments
