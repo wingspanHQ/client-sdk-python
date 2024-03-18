@@ -3,10 +3,10 @@ id: b0014942-e8e3-476c-9b07-b8ef7f2ff30c
 management:
   docChecksum: a394825e1c1bc4930882a784d6d637e8
   docVersion: 1.0.0
-  speakeasyVersion: 1.205.0
-  generationVersion: 2.279.1
-  releaseVersion: 4.2.0
-  configChecksum: bad1c46ed5ae3588e966b81ce338c7bb
+  speakeasyVersion: 1.209.3
+  generationVersion: 2.281.2
+  releaseVersion: 4.2.1
+  configChecksum: 8addabff7eb83aaa2db1dd48d3d48476
   repoURL: https://github.com/wingspanHQ/client-sdk-python.git
   repoSubDirectory: files
   installationURL: https://github.com/wingspanHQ/client-sdk-python.git#subdirectory=files
@@ -16,7 +16,7 @@ features:
     core: 4.5.1
     flattening: 2.81.1
     globalSecurity: 2.83.4
-    globalServerURLs: 2.82.1
+    globalServerURLs: 2.82.2
     responseFormat: 0.1.0
 generatedFiles:
   - src/sdk/sdkconfiguration.py
