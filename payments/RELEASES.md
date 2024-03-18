@@ -19,3 +19,134 @@ Based on:
 - [python v1.0.0] payments
 ### Releases
 - [PyPI v1.0.0] https://pypi.org/project/wingspan_payments/1.0.0 - payments
+
+
+## 2023-11-13 01:28:29
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.119.0 (2.188.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v2.0.0] payments
+### Releases
+- [PyPI v2.0.0] https://pypi.org/project/wingspan_payments/2.0.0 - payments
+
+## 2023-11-20 01:29:14
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.121.1 (2.194.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v2.0.1] payments
+### Releases
+- [PyPI v2.0.1] https://pypi.org/project/wingspan_payments/2.0.1 - payments
+
+## 2023-11-27 01:28:48
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.122.0 (2.195.2) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v2.0.2] payments
+### Releases
+- [PyPI v2.0.2] https://pypi.org/project/wingspan_payments/2.0.2 - payments
+
+## 2023-12-11 01:29:30
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.125.2 (2.210.6) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v2.0.3] payments
+### Releases
+- [PyPI v2.0.3] https://pypi.org/project/wingspan_payments/2.0.3 - payments
+
+## 2023-12-18 01:29:22
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.126.4 (2.214.10) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v2.1.0] payments
+### Releases
+- [PyPI v2.1.0] https://pypi.org/project/wingspan_payments/2.1.0 - payments
+
+## 2024-01-08 01:29:36
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.133.1 (2.228.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v3.0.0] payments
+### Releases
+- [PyPI v3.0.0] https://pypi.org/project/wingspan_payments/3.0.0 - payments
+
+## 2024-01-22 01:31:21
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.148.0 (2.237.3) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v3.0.1] payments
+### Releases
+- [PyPI v3.0.1] https://pypi.org/project/wingspan_payments/3.0.1 - payments
+
+## 2024-02-05 01:27:14
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.166.0 (2.248.6) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v4.0.0] payments
+### Releases
+- [PyPI v4.0.0] https://pypi.org/project/wingspan_payments/4.0.0 - payments
+
+## 2024-02-12 01:25:24
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.177.1 (2.252.2) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v4.0.1] payments
+### Releases
+- [PyPI v4.0.1] https://pypi.org/project/wingspan_payments/4.0.1 - payments
+
+## 2024-02-19 01:26:12
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.183.2 (2.262.2) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v4.0.2] payments
+### Releases
+- [PyPI v4.0.2] https://pypi.org/project/wingspan_payments/4.0.2 - payments
+
+## 2024-03-04 01:27:29
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.200.0 (2.277.0) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v4.1.0] payments
+### Releases
+- [PyPI v4.1.0] https://pypi.org/project/wingspan_payments/4.1.0 - payments
+
+## 2024-03-11 01:25:44
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.205.0 (2.279.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v4.2.0] payments
+### Releases
+- [PyPI v4.2.0] https://pypi.org/project/wingspan_payments/4.2.0 - payments
+
+## 2024-03-18 01:25:51
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.209.3 (2.281.2) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v4.2.1] payments
+### Releases
+- [PyPI v4.2.1] https://pypi.org/project/wingspan_payments/4.2.1 - payments
