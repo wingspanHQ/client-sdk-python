@@ -3,7 +3,7 @@
 from __future__ import annotations
 import dataclasses
 import requests as requests_http
-from ..shared import enrollment as shared_enrollment
+from ...models.shared import enrollment as shared_enrollment
 from typing import Optional
 
 
@@ -21,9 +21,9 @@ class GetBenefitsEnrollmentIDResponse:
     r"""HTTP response content type for this operation"""
     status_code: int = dataclasses.field()
     r"""HTTP response status code for this operation"""
+    raw_response: requests_http.Response = dataclasses.field()
+    r"""Raw HTTP response; suitable for custom response parsing"""
     enrollment: Optional[shared_enrollment.Enrollment] = dataclasses.field(default=None)
     r"""An Enrollment records"""
-    raw_response: Optional[requests_http.Response] = dataclasses.field(default=None)
-    r"""Raw HTTP response; suitable for custom response parsing"""
     
 
