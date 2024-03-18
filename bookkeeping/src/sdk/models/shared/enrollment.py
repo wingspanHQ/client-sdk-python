@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 import dataclasses
-from ..shared import e974d9e9e5676123cf56d2fd858ece1c24be8be15b96a100963b7cb1afada329 as shared_e974d9e9e5676123cf56d2fd858ece1c24be8be15b96a100963b7cb1afada329
+from .e974d9e9e5676123cf56d2fd858ece1c24be8be15b96a100963b7cb1afada329 import E974d9e9e5676123cf56d2fd858ece1c24be8be15b96a100963b7cb1afada329
 from dataclasses_json import Undefined, dataclass_json
 from sdk import utils
 
@@ -11,6 +11,6 @@ from sdk import utils
 @dataclasses.dataclass
 class Enrollment:
     member_id: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('memberId') }})
-    wingspan_benefits: shared_e974d9e9e5676123cf56d2fd858ece1c24be8be15b96a100963b7cb1afada329.E974d9e9e5676123cf56d2fd858ece1c24be8be15b96a100963b7cb1afada329 = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('wingspanBenefits') }})
+    wingspan_benefits: E974d9e9e5676123cf56d2fd858ece1c24be8be15b96a100963b7cb1afada329 = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('wingspanBenefits') }})
     
 
