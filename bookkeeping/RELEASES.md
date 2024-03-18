@@ -130,3 +130,13 @@ Based on:
 - [python v4.2.0] bookkeeping
 ### Releases
 - [PyPI v4.2.0] https://pypi.org/project/wingspan_bookkeeping/4.2.0 - bookkeeping
+
+## 2024-03-18 01:27:12
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://docs.wingspan.app/openapi/6470f38d65c260000c025474
+- Speakeasy CLI 1.209.3 (2.281.2) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [python v4.2.1] bookkeeping
+### Releases
+- [PyPI v4.2.1] https://pypi.org/project/wingspan_bookkeeping/4.2.1 - bookkeeping
